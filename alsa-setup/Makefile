@@ -1,0 +1,3 @@
+install:
+	./build-alsa.sh
+
