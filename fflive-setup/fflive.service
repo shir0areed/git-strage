@@ -1,0 +1,8 @@
+[Unit]
+Description = FFmpeg Live streaming
+
+[Service]
+ExecStart = /bin/bash /home/pi/fflive/fflive.sh
+ExecStopPost = /bin/bash /home/pi/fflive/fflive-finish.sh
+Restart = always
+RestartSec = 10

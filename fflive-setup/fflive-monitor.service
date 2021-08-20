@@ -1,0 +1,6 @@
+[Unit]
+Description = Network and Device Monitoring for FFmpeg Live streaming
+
+[Service]
+ExecStart = /bin/bash /home/pi/fflive/fflive-monitor.sh
+Type = oneshot
