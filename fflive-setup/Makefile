@@ -4,6 +4,8 @@ MONITOR = $(FFLIVE)-monitor
 install: uninstall
 	mkdir ~/$(FFLIVE)
 	cp *.sh ~/$(FFLIVE)
+	./input.sh
+	mv *.txt ~/$(FFLIVE)
 	sudo cp *.service *.timer /etc/systemd/system
 	sudo systemctl enable $(MONITOR).timer
 
