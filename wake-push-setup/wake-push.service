@@ -1,0 +1,12 @@
+[Unit]
+Description = Push notification on startup
+After = wait-timesync.service 
+
+[Service]
+ExecStart = /bin/bash /home/pi/wake-push/wake-push.sh
+Type = oneshot
+RemainAfterExit = yes
+
+[Install]
+WantedBy = multi-user.target
+
