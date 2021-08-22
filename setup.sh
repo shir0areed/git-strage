@@ -32,6 +32,12 @@ cd wait-timesync-setup
 make
 cd ../
 
+rm -rf wake-push-setup
+git-read wake-push-setup
+cd wake-push-setup
+make
+cd ../
+
 rm -rf fflive-setup
 git-read fflive-setup
 cd fflive-setup
