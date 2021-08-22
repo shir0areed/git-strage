@@ -1,9 +1,10 @@
 [Unit]
 Description = Repeat Network and Device Monitoring for FFmpeg Live streaming
-After = wait-timesync.service
+After = wake-push.service
+Requires = wake-push.service
 
 [Timer]
-OnBootSec = 10s
+OnActiveSec = 10s
 OnUnitActiveSec = 10s
 AccuracySec=1
 Unit = fflive-monitor.service
